@@ -1,2 +1,2 @@
 # Data-Structures-And-Algorithms
-Standard programs related to Data Structures &amp; Algorithms.
+Standard problems related to Data Structures &amp; Algorithms.
