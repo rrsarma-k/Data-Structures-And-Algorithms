@@ -15,7 +15,8 @@ const ll mxn = 1e9 + 1;
 bool hasTestCases = 1;
 
 void solve() {	
-	
+	int n;
+	cin >> n;
 }
 
 int main() {
@@ -29,6 +30,5 @@ int main() {
 	fastIO();
 	int T = 1;
 	if (hasTestCases) cin >> T;
-	int n = T;
 	while (T--) solve();
 }
