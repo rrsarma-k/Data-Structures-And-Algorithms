@@ -3,7 +3,6 @@
 using namespace std;
 using ll = long long;
 using ull = unsigned long long;
-void fastIO() { ios_base::sync_with_stdio(false); cin.tie(nullptr); }
 template<class T> void deb(T t) { cerr << t; }
 template<class T> void deb(vector<T>& ar) { cerr << "[ "; for(T t : ar) { deb(t); cerr << " "; } cerr << "]\n"; }
 template<class T> void deb(set<T>& s) { cerr << "{ "; for(T t : s) { deb(t); cerr << " "; } cerr << "}\n"; }
@@ -14,20 +13,24 @@ const int PRIMES_1E5 = 1299720;
 const ll mxn = 1e9 + 1;	
 bool hasTestCases = 1;
 
+ll minll(ll a, ll b) { return (a < b ? a : b); }
+ll maxll(ll a, ll b) { return (a > b ? a : b); }
+
 void solve() {	
 	int n;
 	cin >> n;
 }
 
 int main() {
-#ifndef ONLINE_JUDGE
-	freopen("in.txt", "r", stdin);
-	freopen("out.txt", "w", stdout);
-	freopen("err.txt", "w", stderr);
-#else
-#define cerr if(0) cerr
-#endif
-	fastIO();
+	#ifndef ONLINE_JUDGE
+		freopen("in.txt", "r", stdin);
+		freopen("out.txt", "w", stdout);
+		freopen("err.txt", "w", stderr);
+	#else
+		#define cerr if(0) cerr
+	#endif
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
 	int T = 1;
 	if (hasTestCases) cin >> T;
 	while (T--) solve();
