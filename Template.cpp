@@ -6,7 +6,6 @@ using namespace std;
 /***** Datatype Aliases ******/
 using ll = long long;
 using ull = unsigned long long;
-/*****************************/
 
 /******************************************************************************* Debugger **********************************************************************************************/
 template<class T> void deb(T t) { cerr << t; }
@@ -15,18 +14,15 @@ template<class T> void deb(set<T>& s) { cerr << "{ "; for(T t : s) { deb(t); cer
 template<class T> void deb(unordered_set<T>& us) { cerr << "{ "; for(T t : us) { deb(t); cerr << " "; } cerr << "}\n"; }
 template<class K, class V> void deb(map<K, V>& m) { cerr << "{ "; for(auto x : m) { cerr << "{"; deb(x.first); cerr << " : "; deb(x.second); cerr << "} "; } cerr << "}\n"; }
 template<class K, class V> void deb(unordered_map<K, V>& m) { cerr << "{ "; for(auto x : m) { cerr << "{"; deb(x.first); cerr << " : "; deb(x.second); cerr << "} "; } cerr << "}\n"; }
-/**************************************************************************************************************************************************************************************/
 
 /********* Constants *********/
 const int PRIMES_1E5 = 1299720;
 const ll mxn = 1e9 + 7;	
 bool hasTestCases = 1;
-/*****************************/
 
 /************** ll comparisons *****************/
 ll minll(ll a, ll b) { return (a < b ? a : b); }
 ll maxll(ll a, ll b) { return (a > b ? a : b); }
-/***********************************************/
 
 // Testcase function.
 void solve() {	
