@@ -3,7 +3,7 @@
 #define dbg(x) cerr << #x << " : " << x << '\n';
 using namespace std;
 
-/******* Datatype Aliases ****/
+/***** Datatype Aliases ******/
 using ll = long long;
 using ull = unsigned long long;
 /*****************************/
