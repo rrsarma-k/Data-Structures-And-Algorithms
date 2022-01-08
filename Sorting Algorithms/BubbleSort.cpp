@@ -32,8 +32,9 @@ void sort2(int* ar, int n) {
 
     Here n is 6 but after 3 passes array is sorted. still we're looping 
     in sort2() even after sorted.
-    Means if the condition in inner loop(ar[j] > ar[j+1]) does not execute at once then array is sorted.
-    Then we can come out of the loop.
+    Means if the condition in inner loop(ar[j] > ar[j+1]) does not execute at once for any pass
+    then array is sorted.
+    Then we can come out of the main loop.
 */
 // Complexity: still O(n^2), but optimised, which results less iterations in best case(even
 // with the array is sorted).

@@ -4,7 +4,7 @@ using namespace std;
 
 // Not an inplace sort algo, as it creates an auxilary space(br) w.r.to n.
 void sort1(int* ar, int n) {
-    int br[n];
+    int br[n] = {0};
     int index = 0;
     for(int i = 0; i < n; ++i) {
         int mn_ele_idx = i;
