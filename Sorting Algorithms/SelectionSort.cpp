@@ -13,6 +13,7 @@ void sort1(int* ar, int n) {
                 mn_ele_idx = j;
             }
         }
+        // Copying each pass min element to array br[]
         br[index++] = ar[mn_ele_idx];
         ar[mn_ele_idx] = INT_MAX;
     }
